@@ -13,67 +13,71 @@
     <!-- nav element for navigation -->
     <nav>
         <!-- ul element to markup a list of links -->
-        <ul>
+        <ul class="container main-nav">
             <li>
-                <a href="#">
+                <a href="#" class="nav-link nav-item">
                     My Account
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" class="nav-link nav-item">
                     Basket
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" class="nav-link nav-item">
                     Checkout
                 </a>
             </li>
         </ul>
-        <footer>
-            <ul>
-                <li>
-                    <a href="">
-                        +353(0) 614486165
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        info@millflowers.is
-                    </a>
-                </li>
-            </ul>
-        </footer>
+
+        <div class="container logo-footer">
+            <div class="">
+                <img src="images\logo3.png" alt="">
+            </div>
+            <footer>
+                <ul class="container nav-footer">
+                    <li>
+                        <a href="">
+                            +353(0) 614486165
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            info@millflowers.is
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </nav>
 
-    <h1>Mill Flowers</h1>
-
-    <h2>ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</h2>
+    <h2 class="header-2">ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</h2>
 
     <nav>
-        <ul>
+        <ul class="container sec-nav">
             <li>
-                <a href="">
+                <a href="" class="sec-nav-item">
                     HOME
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="" class="sec-nav-item">
                     ABOUT US
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="" class="sec-nav-item">
                     BUY ONLINE
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="" class="sec-nav-item">
                     WEDDINGS
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="" class="sec-nav-item">
                     CONTACT US
                 </a>
             </li>
@@ -81,12 +85,12 @@
     </nav>
 
     <section>
-        <div>
-            <div>
+        <div class="container product">
+            <div class="product-image-main">
                 <img src="images\lily500.png" alt="">
             </div>
-            <div>
-                <h3>
+            <div class="product-content mr">
+                <h3 class="product-heading">
                     Vibrant Lily Basket
                 </h3>
                 <p>Vibrant orange asiatic lilies in a wicker basket.</p>
@@ -94,7 +98,7 @@
                     reusable rustic wicker basket - sure to add an inviting touch ti any soace!</p>
                 <p>Price 49.99 </p>
                 <hr>
-                <h4>Choose delivery or pickup</h4>
+                <h4 class="product-heading-4">Choose delivery or pickup</h4>
 
                 <!-- form: selecting delivery or pickup -->
                 <form action="">
@@ -103,38 +107,42 @@
                         <option value="">Delivery</option>
                         <option value="">Pickup</option>
                     </select>
-
-                    <button type="submit">Order Now</button>
+                    <div class="button-container">
+                        <button class="button" type="submit">Order Now</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
     <section>
-        <h3>You may also like</h3>
-        <ul>
-            <li>
+        <h3 class="recommendation-header">You may also like</h3>
+        <ul class="container recommendations">
+            <li class="recommendation-item">
                 <h4>White bouquet</h4>
-                <img src="images\white400_square.png" alt="">
+                <img class="product-image" src="images\white400_square.png" alt="">
             </li>
-            <li>
+            <li class="recommendation-item">
                 <h4>Orange bouquet</h4>
-                <img src="images\gift.png" alt="">
+                <img class="product-image" src="images\gift.png" alt="">
             </li>
-            <li>
+            <li class="recommendation-item">
                 <h4>Tulip boquet</h4>
-                <img src="images\tulips_square.png" alt="">
+                <img class="product-image" src="images\tulips_square.png" alt="">
             </li>
-            <li>
+            <li class="recommendation-item">
                 <h4>Small boquet</h4>
-                <img src="images\wedding_Square.jpg" alt="">
+                <img class="product-image" src="images\wedding_Square.jpg" alt="">
             </li>
         </ul>
     </section>
 
-    <footer>
-        @millflowers
-    </footer>
+    <div class="footer-container">
+        <footer class="mr">
+            @millflowers
+        </footer>
+    </div>
+
 </body>
 
 </html>
