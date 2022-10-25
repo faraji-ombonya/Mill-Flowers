@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Checkout</title>
+
+    <!-- link to the css file: links this html file to the css file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- nav element for navigation -->
+    <nav>
+        <!-- ul element to markup a list of links -->
+        <ul class="container main-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    My Account
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Basket
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Checkout
+                </a>
+            </li>
+        </ul>
+
+        <!-- div container: hold the logo and footer in the navigation -->
+        <div class="container logo-footer">
+            <div class="nav-logo">
+                <img src="images\logo3.png" alt="logo">
+            </div>
+
+            <footer class="">
+                <ul class="container nav-footer">
+                    <li class="">
+                        <a href="#">
+                            +353(0) 614486165
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            info@millflowers.is
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+    </nav>
+
+    <!-- Header -->
+    <h2 class="header-2">ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</h2>
+
+    <nav>
+        <ul class="container sec-nav">
+            <li class="">
+                <a href="#" class="sec-nav-item">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sec-nav-item">
+                    ABOUT US
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sec-nav-item">
+                    BUY ONLINE
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sec-nav-item">
+                    WEDDINGS
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sec-nav-item">
+                    CONTACT US
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3 class="checkout-header">Checkout</h3>
+        <form action="#" method="post">
+            <div class="border">
+                <h4 class="checkout-h3">Delivery Information</h4>
+                <ul class="checkout-container">
+                    <li class="checkout">
+                        <label class="checkout-label" for="deliveryDate">Delivery date</label>
+                        <input class="checkout-input" type="date" name="deliveryDate" id="deliveryDate">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="deliveryInstructions">Special Delivery Instructions</label>
+                        <textarea class="checkout-input" name="deliveryInstructions" id="deliveryInstructions" cols="30"
+                            rows="4"></textarea>
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="firstName">Recipient Firstname</label>
+                        <input class="checkout-input" type="text" name="firstName" id="firstName">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="surname">Recipient Surname</label>
+                        <input class="checkout-input" type="text" name="surname" id="surname">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="address1">Address 1</label>
+                        <input class="checkout-input" type="text" name="address1" id="address1">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="address2">Address 2</label>
+                        <input class="checkout-input" type="text" name="address2" id="address2">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="townCity">Town/City</label>
+                        <input class="checkout-input" type="text" name="townCity" id="townCity">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="country">Country</label>
+                        <input class="checkout-input" type="text" name="country" id="country">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="eirCode">Eircode</label>
+                        <input class="checkout-input" type="text" name="eirCode" id="eirCode">
+                    </li>
+                    <li class="checkout">
+                        <label class="checkout-label" for="cardMessage">Card Message</label>
+                        <textarea class="checkout-input" name="cardMessage" id="cardMessage" cols="30"
+                            rows="4"></textarea>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="border">
+                <h4 class="checkout-h3">Payment Information</h4>
+                <h5 class="checkout-h5">Credit Card</h5>
+                <ul class="checkout-container">
+                    <li class="checkout">
+                        <label class="checkout-label" for="nameOnCard">Name on card</label>
+                        <input class="checkout-input" type="text" name="nameOnCard" id="nameOnCard">
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="cardType">Credit Card Type</label>
+
+                        <div class="checkout-radio">
+                            <div>
+                                <input type="radio" name="cardType" id="cardType" value="Visa">Visa
+                            </div>
+                            <div>
+                                <input type="radio" name="cardType" id="cardType" value="Mastercard">Mastercard
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="cardNumber">Card Number</label>
+                        <input class="checkout-input" type="text" name="cardNumber" id="cardNumber">
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="expiry">Expiry</label>
+                        <input class="checkout-input" type="date" name="expiry" id="expiry">
+
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="verificationNumber">Card verification number</label>
+                        <input class="checkout-input" type="text" name="verificationNumber" id="verificationNumber">
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="email">Email</label>
+                        <input class="checkout-input" type="email" name="email" id="email">
+                    </li>
+
+                    <li class="checkout">
+                        <label class="checkout-label" for="phone">Phone</label>
+                        <input class="checkout-input" type="tel" name="phone" id="phone">
+                    </li>
+                </ul>
+
+            </div>
+            <div class="button-container">
+                <button class="button mr" type="submit" name="submit">Place Order</button>
+            </div>
+
+        </form>
+    </section>
+
+
+    <footer class="footer-container">
+        <p class="mr">@millflowers</p>
+    </footer>
+
+</body>
+
+</html>

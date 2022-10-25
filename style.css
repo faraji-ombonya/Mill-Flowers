@@ -1,0 +1,195 @@
+/* --------- general classes  -----------*/
+body, html{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+}
+
+/* base flex container class  */
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.border{
+    border: 1px solid #A0C33F;
+    width: 96%;
+    margin-left: 10px;
+    padding: 5px;
+    margin: 20px;
+}
+/* general classes */
+
+/* ------------- Navigation ----------- */
+.main-nav{
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background-color: #A0C33F;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* navigation link style for hover state */
+.nav-item .nav-link:hover{
+    background-color: #92999C;
+}
+
+/* navigation link style for active state */
+.nav-item .nav-link:active{
+    background-color: #7A7C7D;
+}
+
+/* logo and footer */
+.logo-footer{
+    justify-content: space-between;
+}
+
+.nav-footer{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Navigation */
+
+
+
+
+
+/* header 2 */
+.header-2{
+ color: #7A7C7D;
+ 
+}
+/* header 2 */
+
+
+/* -------- secondary navigation ------------ */
+.sec-nav{
+    list-style-type: none;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.sec-nav-item{
+    text-decoration: none;
+    padding-right: 5px 10px;
+    margin: 20px;
+    margin-left: 0;
+    color: #A0C33F;
+}
+
+.sec-nav-item:hover{
+    color: #92999C;
+}
+
+.sec-nav-item:active{
+    color: #7A7C7D;
+}
+/* secondary navigation */
+
+/* ---------- checkout section ------------ */
+.checkout-header{
+    color: #A0C33F;
+}
+
+.checkout-h2{
+    color: #A0C33F;
+}
+
+.checkout-h3{
+    color: #A0C33F;
+}
+.checkout-h5{
+    color: #7A7C7D;
+    margin-left: 20px;
+}
+.
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.checkout-item{
+    flex: 1 1;
+}
+
+.checkout{
+    display: flex;
+}
+
+
+.checkout-label{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40px;
+    color: #7A7C7D;
+}
+
+.checkout-input{
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 2rem;
+    margin-right: 40%;
+    margin-top: 8px;
+    border: 1px solid #A0C33F;
+}
+
+.checkout-radio{
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 2rem;
+    margin-right: 40%;
+    margin-top: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    background-color: #A0C33F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+/* submit button: hover state */
+.button:hover{
+    background-color: #92999C;
+}
+
+/* submit  button: active state */
+.button:active{
+    background-color: #7A7C7D;
+}
+
+/* margin right */
+.mr{
+    margin-right: 1.4rem;
+}
+/* checkout section */
+
+/* ---------- footer ------------ */
+.footer-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+
+/* footer */
