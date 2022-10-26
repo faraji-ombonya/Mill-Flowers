@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title: markup title of the page -->
     <title>Product</title>
+    <!-- links to css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,23 +16,12 @@
     <nav>
         <!-- ul element to markup a list of links -->
         <ul class="container main-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link ">
-                    My Account
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link nav-item">
-                    Basket
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link nav-item">
-                    Checkout
-                </a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link ">My Account</a></li>
+            <li class="nav-item"><a href="#" class="nav-link nav-item">Basket</a></li>
+            <li class="nav-item"><a href="checkout.html" class="nav-link nav-item">Checkout</a></li>
         </ul>
 
+        <!-- div: container to hold logo and communication links -->
         <div class="container logo-footer">
             <div class="">
                 <img src="images\logo3.png" alt="">
@@ -41,15 +31,11 @@
                 <ul class="container nav-footer">
                     <li>
                         <!-- link: protocol to open dialer -->
-                        <a href="tel: +353(0) 614486165">
-                            +353(0) 614486165
-                        </a>
+                        <a href="tel: +353(0) 614486165">+353(0) 614486165</a>
                     </li>
                     <li>
                         <!-- link: protocol to open mail client -->
-                        <a href="mailto:info@millflowers.ie">
-                            info@millflowers.ie
-                        </a>
+                        <a href="mailto:info@millflowers.ie">info@millflowers.ie</a>
                     </li>
                 </ul>
             </footer>
@@ -58,34 +44,15 @@
 
     <p class="nav-heading">ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</p>
 
-
+    <!-- nav: markup secondary navigation -->
     <nav>
+        <!-- list of links -->
         <ul class="container sec-nav">
-            <li>
-                <a href="#" class="sec-nav-item">
-                    HOME
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    ABOUT US
-                </a>
-            </li>
-            <li>
-                <a href="product.html" class="sec-nav-item">
-                    BUY ONLINE
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    WEDDINGS
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    CONTACT US
-                </a>
-            </li>
+            <li><a href="#" class="sec-nav-item">HOME</a></li>
+            <li><a href="#" class="sec-nav-item">ABOUT US</a></li>
+            <li><a href="product.html" class="sec-nav-item">BUY ONLINE</a></li>
+            <li><a href="#" class="sec-nav-item">WEDDINGS</a></li>
+            <li><a href="#" class="sec-nav-item">CONTACT US</a></li>
         </ul>
     </nav>
 
@@ -99,9 +66,7 @@
             </div>
             <!-- div, headers and paragraphs: markup information about the main product -->
             <div class="product-content ">
-                <h1 class="product-heading">
-                    Vibrant Lily Basket
-                </h1>
+                <h1 class="product-heading">Vibrant Lily Basket</h1>
                 <p>Vibrant orange asiatic lilies in a wicker basket.</p>
                 <p>These flowers are naturally complemented by the deep green shades of oregonia and nestled in a
                     reusable rustic wicker basket - sure to add an inviting touch ti any soace!</p>
@@ -110,7 +75,7 @@
                 <h3 class="product-heading-4">Choose delivery or pickup</h3>
 
                 <!-- form: selecting delivery or pickup -->
-                <form action="">
+                <form action="checkout.html" method="get">
                     <label class="delivery-label" for="delivery-pickup">Order Type</label>
                     <select name="delivery-pickup" id="delivery-pickup">
                         <option value="delivery">Delivery</option>

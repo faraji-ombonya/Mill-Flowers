@@ -5,91 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- title element: markup the Title of the page -->
     <title>Checkout</title>
-
     <!-- link to the css file: links this html file to the css file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <!-- nav element: markup the navigation section -->
     <nav>
         <!-- ul element: markup an unordered list of links -->
         <ul class="container main-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    My Account
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    Basket
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    Checkout
-                </a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link">My Account</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Basket</a></li>
+            <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
         </ul>
 
-        <!-- div container: hold the logo and footer in the navigation -->
+        <!-- div container: hold the logo and footer in the navigation section -->
         <div class="container logo-footer">
             <div class="nav-logo">
                 <img src="images\logo3.png" alt="logo">
             </div>
             <!-- footer: markup communication links -->
             <footer class="">
+                <!-- list of communication links -->
                 <ul class="container nav-footer">
-                    <li class="">
-                        <a href="tel: +353(0) 614486165">
-                            +353(0) 614486165
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="mailto: info@millflowers.ie">
-                            info@millflowers.ie
-                        </a>
-                    </li>
+                    <li class=""><a href="tel: +353(0) 614486165">+353(0) 614486165</a></li>
+                    <li class=""><a href="mailto: info@millflowers.ie">info@millflowers.ie</a></li>
                 </ul>
             </footer>
         </div>
-
     </nav>
 
     <!-- Header -->
     <p class="nav-heading">ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</p>
 
+    <!-- nav: markup secondary navigation section -->
     <nav>
         <ul class="container sec-nav">
-            <li class="">
-                <a href="#" class="sec-nav-item">
-                    HOME
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    ABOUT US
-                </a>
-            </li>
-            <li>
-                <a href="product.html" class="sec-nav-item">
-                    BUY ONLINE
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    WEDDINGS
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sec-nav-item">
-                    CONTACT US
-                </a>
-            </li>
+            <li><a href="#" class="sec-nav-item">HOME</a></li>
+            <li><a href="#" class="sec-nav-item">ABOUT US</a></li>
+            <li><a href="product.html" class="sec-nav-item">BUY ONLINE</a></li>
+            <li><a href="#" class="sec-nav-item">WEDDINGS</a></li>
+            <li><a href="#" class="sec-nav-item">CONTACT US</a></li>
         </ul>
     </nav>
 
@@ -105,7 +63,7 @@
                 <ul class="checkout-container">
                     <li class="checkout">
                         <label class="checkout-label" for="deliveryDate">Delivery date</label>
-                        <input class="checkout-input" type="date" name="deliveryDate" id="deliveryDate">
+                        <input class="checkout-input" type="date" name="deliveryDate" id="deliveryDate" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="deliveryInstructions">Special Delivery Instructions</label>
@@ -114,53 +72,52 @@
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="firstName">Recipient Firstname</label>
-                        <input class="checkout-input" type="text" name="firstName" id="firstName">
+                        <input class="checkout-input" type="text" name="firstName" id="firstName" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="surname">Recipient Surname</label>
-                        <input class="checkout-input" type="text" name="surname" id="surname">
+                        <input class="checkout-input" type="text" name="surname" id="surname" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="address1">Address 1</label>
-                        <input class="checkout-input" type="text" name="address1" id="address1">
+                        <input class="checkout-input" type="text" name="address1" id="address1" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="address2">Address 2</label>
-                        <input class="checkout-input" type="text" name="address2" id="address2">
+                        <input class="checkout-input" type="text" name="address2" id="address2" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="townCity">Town/City</label>
-                        <input class="checkout-input" type="text" name="townCity" id="townCity">
+                        <input class="checkout-input" type="text" name="townCity" id="townCity" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="country">Country</label>
-                        <input class="checkout-input" type="text" name="country" id="country">
+                        <input class="checkout-input" type="text" name="country" id="country" required>
                     </li>
                     <li class="checkout">
                         <label class="checkout-label" for="eirCode">Eircode</label>
-                        <input class="checkout-input" type="text" name="eirCode" id="eirCode">
+                        <input class="checkout-input" type="text" name="eirCode" id="eirCode" required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="cardMessage">Card Message</label>
-                        <textarea class="checkout-input" name="cardMessage" id="cardMessage" cols="30"
-                            rows="4"></textarea>
+                        <textarea class="checkout-input" name="cardMessage" id="cardMessage" cols="30" rows="4"
+                            required></textarea>
                     </li>
                 </ul>
             </div>
 
+            <!-- payment information section -->
             <div class="border">
                 <h2 class="checkout-h2">Payment Information</h2>
                 <h3 class="checkout-h3">Credit Card</h3>
+                <!-- a list containing labels and input fields -->
                 <ul class="checkout-container">
                     <li class="checkout">
                         <label class="checkout-label" for="nameOnCard">Name on card</label>
-                        <input class="checkout-input" type="text" name="nameOnCard" id="nameOnCard">
+                        <input class="checkout-input" type="text" name="nameOnCard" id="nameOnCard" required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="cardType">Credit Card Type</label>
-
                         <div class="checkout-radio">
                             <div>
                                 <input type="radio" name="cardType" id="cardType" value="Visa">Visa
@@ -170,47 +127,39 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="cardNumber">Card Number</label>
-                        <input class="checkout-input" type="text" name="cardNumber" id="cardNumber">
+                        <input class="checkout-input" type="text" name="cardNumber" id="cardNumber" required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="expiry">Expiry</label>
-                        <input class="checkout-input" type="date" name="expiry" id="expiry">
-
+                        <input class="checkout-input" type="date" name="expiry" id="expiry" required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="verificationNumber">Card verification number</label>
-                        <input class="checkout-input" type="text" name="verificationNumber" id="verificationNumber">
+                        <input class="checkout-input" type="text" name="verificationNumber" id="verificationNumber"
+                            required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="email">Email</label>
-                        <input class="checkout-input" type="email" name="email" id="email">
+                        <input class="checkout-input" type="email" name="email" id="email" required>
                     </li>
-
                     <li class="checkout">
                         <label class="checkout-label" for="phone">Phone</label>
-                        <input class="checkout-input" type="tel" name="phone" id="phone">
+                        <input class="checkout-input" type="tel" name="phone" id="phone" required>
                     </li>
                 </ul>
-
             </div>
             <div class="button-container">
+                <!-- submit button: submits the form -->
                 <button class="button" type="submit" name="submit">Place Order</button>
             </div>
-
         </form>
     </section>
-
-
+    <!-- footer: markup footer -->
     <footer class="footer-container">
         <p class="">@millflowers</p>
     </footer>
-
 </body>
 
 </html>
