@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title: markup title of the page -->
     <title>Product</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,13 +37,16 @@
                 <img src="images\logo3.png" alt="">
             </div>
             <footer>
+                <!-- list: container to markup communication links -->
                 <ul class="container nav-footer">
                     <li>
+                        <!-- link: protocol to open dialer -->
                         <a href="tel: +353(0) 614486165">
                             +353(0) 614486165
                         </a>
                     </li>
                     <li>
+                        <!-- link: protocol to open mail client -->
                         <a href="mailto:info@millflowers.ie">
                             info@millflowers.ie
                         </a>
@@ -85,12 +89,16 @@
         </ul>
     </nav>
 
+    <!-- section element: markup the main product section -->
     <section>
+        <!-- div: container to hold mai product -->
         <div class="container product">
+            <!-- div and image elements: markup image of the main product -->
             <div class="product-image-main">
                 <img src="images\lily500.png" alt="">
             </div>
-            <div class="product-content mr">
+            <!-- div, headers and paragraphs: markup information about the main product -->
+            <div class="product-content ">
                 <h1 class="product-heading">
                     Vibrant Lily Basket
                 </h1>
@@ -103,12 +111,13 @@
 
                 <!-- form: selecting delivery or pickup -->
                 <form action="">
-                    <label class="delivery-label" for="">Order Type</label>
-                    <select name="" id="">
-                        <option value="">Delivery</option>
-                        <option value="">Pickup</option>
+                    <label class="delivery-label" for="delivery-pickup">Order Type</label>
+                    <select name="delivery-pickup" id="delivery-pickup">
+                        <option value="delivery">Delivery</option>
+                        <option value="pickup">Pickup</option>
                     </select>
                     <div class="button-container">
+                        <!-- submit button: submit the form -->
                         <button class="button" type="submit">Order Now</button>
                     </div>
                 </form>
@@ -116,8 +125,11 @@
         </div>
     </section>
 
+    <!-- Recomendations section -->
+    <!-- section element: markup the recommendations section -->
     <section>
         <h2 class="recommendation-header">You may also like</h2>
+        <!-- unordered list: markup a list of recommended items -->
         <ul class="container recommendations">
             <li class="recommendation-item">
                 <h3>White bouquet</h3>
@@ -138,8 +150,10 @@
         </ul>
     </section>
 
+    <!-- div: container to hold footer -->
     <div class="footer-container">
-        <footer class="mr">
+        <!-- footer element: markup footer -->
+        <footer class="">
             @millflowers
         </footer>
     </div>

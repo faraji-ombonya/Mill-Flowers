@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title of the page -->
+    <!-- title element: markup the Title of the page -->
     <title>Checkout</title>
 
     <!-- link to the css file: links this html file to the css file for styling -->
@@ -15,9 +15,9 @@
 
 <body>
 
-    <!-- nav element for navigation -->
+    <!-- nav element: markup the navigation section -->
     <nav>
-        <!-- ul element to markup a list of links -->
+        <!-- ul element: markup an unordered list of links -->
         <ul class="container main-nav">
             <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -41,7 +41,7 @@
             <div class="nav-logo">
                 <img src="images\logo3.png" alt="logo">
             </div>
-
+            <!-- footer: markup communication links -->
             <footer class="">
                 <ul class="container nav-footer">
                     <li class="">
@@ -93,11 +93,15 @@
         </ul>
     </nav>
 
+    <!-- section element: markup checkout section -->
     <section>
+        <!-- h1 element: markup main header of the page -->
         <h1 class="checkout-header">Checkout</h1>
+        <!-- form element: markup checkout form  -->
         <form action="checkout.php" method="post">
+            <!-- div with border class: put a border around the firs part of the form -->
             <div class="border">
-                <h2 class="checkout-h3">Delivery Information</h2>
+                <h2 class="checkout-h2">Delivery Information</h2>
                 <ul class="checkout-container">
                     <li class="checkout">
                         <label class="checkout-label" for="deliveryDate">Delivery date</label>
@@ -146,8 +150,8 @@
             </div>
 
             <div class="border">
-                <h2 class="checkout-h3">Payment Information</h2>
-                <h3 class="checkout-h5">Credit Card</h3>
+                <h2 class="checkout-h2">Payment Information</h2>
+                <h3 class="checkout-h3">Credit Card</h3>
                 <ul class="checkout-container">
                     <li class="checkout">
                         <label class="checkout-label" for="nameOnCard">Name on card</label>
@@ -196,7 +200,7 @@
 
             </div>
             <div class="button-container">
-                <button class="button mr" type="submit" name="submit">Place Order</button>
+                <button class="button" type="submit" name="submit">Place Order</button>
             </div>
 
         </form>
@@ -204,7 +208,7 @@
 
 
     <footer class="footer-container">
-        <p class="mr">@millflowers</p>
+        <p class="">@millflowers</p>
     </footer>
 
 </body>

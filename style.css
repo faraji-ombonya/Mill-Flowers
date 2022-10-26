@@ -1,34 +1,70 @@
 /* --------- general classes  -----------*/
+/* 
+body and html
+- remove margin to eliminate whitespace
+- set font
+- flex container
+- set flex direction
+- set box sizing to border box: change how box model size is calculated
+- align items to the center
+*/
 body, html{
     margin: 0;
     font-family:"Helvetica nueu", Helvetica, sans-serif ;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    align-items: center;
 }
 
 /* base flex container class  */
+/* 
+generic flex box container
+- set display to flex box
+- set flex direction to row
+- set maximum width of the container to 1000px 
+*/
 .container{
     display: flex;
     flex-direction: row;
+    max-width: 1000px;
 }
 
+/* 
+generic border class: add a border around an element
+- set border characteristics
+- set width of container
+- and top and bottom margin: add space above and below the container
+*/
 .border{
     border: 1px solid #A0C33F;
-    width: 96%;
-    margin-left: 10px;
-    padding: 5px;
-    margin: 20px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* general classes */
 
 /* ------------- Navigation ----------- */
+/* 
+main navigation class
+- remove default list formating
+- justify content to the end of the flex box
+- set width and add spaces
+- set background color
+*/
 .main-nav{
     list-style-type: none;
     justify-content: flex-end;
+    width: 100em;
     margin: 0;
     padding: 0;
     background-color: #A0C33F;
 }
 
+/* 
+navigation links
+- style navigation links
+*/
 .nav-link {
     display: block;
     color: white;
@@ -52,6 +88,10 @@ body, html{
     justify-content: space-between;
 }
 
+/* 
+style for the communication links
+- remove default list formating
+*/
 .nav-footer{
     list-style-type: none;
     padding: 0;
@@ -60,73 +100,104 @@ body, html{
 /* Navigation */
 
 
-
-
-
-/* header 2 */
+/* header 2 
+- set color, font and alignment of the navigation header
+*/
 .nav-heading{
     color: #7A7C7D;
     font-style: italic;
     font-size: smaller;
+    align-self: flex-start;
 }
 /* header 2 */
 
 
 /* -------- secondary navigation ------------ */
+/* 
+container for the secondary navigation
+- remove default list formating
+*/
 .sec-nav{
     list-style-type: none;
     justify-content: flex-start;
+    width: 100em;
     padding: 0;
 }
 
+/* 
+style for the secondary navigation items
+- remove default link styles
+- add spaces
+- set color
+*/
 .sec-nav-item{
     text-decoration: none;
     padding-right: 5px 10px;
-    margin-right: 4em;
+    margin-right: 2em;
     margin-left: 0;
     color: #A0C33F;
 }
 
+/* 
+secondary navigation item on hover state 
+- change color on hover
+*/
 .sec-nav-item:hover{
     color: #92999C;
 }
 
+/* 
+secondary navigation item on active state
+- change color on active
+*/
 .sec-nav-item:active{
     color: #7A7C7D;
 }
 /* secondary navigation */
 
 /* ---------- checkout section ------------ */
+/* 
+checkout heading
+- set color and font styles
+*/
 .checkout-header{
     color: #A0C33F;
     font-family: Georgia, serif;
-
 }
 
+/* 
+checkout section heagin 2
+- set font and color
+*/
 .checkout-h2{
     color: #A0C33F;
     font-family: Georgia, serif;
-
 }
 
+/* 
+checkout section heagin 3
+- set font and color
+*/
 .checkout-h3{
-    color: #A0C33F;
-    font-family: Georgia, serif;
-
-}
-.checkout-h5{
     color: #7A7C7D;
-    margin-left: 20px;
     font-family: Georgia, serif;
-
 }
-.
+
+/* 
+checkout section container
+- flex box, direction
+- remove default list formating
+*/
 .checkout-container{
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
+/* 
+checkout items 
+- shrink and grow when space is available
+*/
 .checkout-item{
     flex: 1 1;
 }
@@ -135,7 +206,7 @@ body, html{
     display: flex;
 }
 
-
+/* format checkout labels */
 .checkout-label{
     flex-grow: 1;
     flex-shrink: 1;
@@ -143,6 +214,7 @@ body, html{
     color: #7A7C7D;
 }
 
+/* format checkout input */
 .checkout-input{
     flex-grow: 2;
     flex-shrink: 0;
@@ -152,6 +224,7 @@ body, html{
     border: 1px solid #A0C33F;
 }
 
+/* format checkout radio buttons */
 .checkout-radio{
     flex-grow: 2;
     flex-shrink: 0;
@@ -160,11 +233,13 @@ body, html{
     margin-top: 5px;
 }
 
+/* container to hold submit button */
 .button-container{
     display: flex;
     justify-content: flex-end;
 }
 
+/* style submit button*/
 .button{
     background-color: #A0C33F;
     border: none;
@@ -187,16 +262,14 @@ body, html{
     background-color: #7A7C7D;
 }
 
-/* margin right */
-.mr{
-    margin-right: 1.4rem;
-}
 /* checkout section */
 
 /* ---------- footer ------------ */
+
 .footer-container{
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     margin: 5px;
 }
 
@@ -208,7 +281,6 @@ body, html{
 
 
 /* ----------- product section ---------- */
-
 .product{
     justify-content: center;
 }
@@ -243,31 +315,59 @@ body, html{
 /* product section */
 
 /* ---------- recommendations section -------- */
-.recommendations{
-    list-style-type: none;
+/* 
+recommendation section header
+- set color and font
+*/
+.recommendation-header{
+    color: #A0C33F;
+    font-family: Georgia, serif;
 }
 
+/* 
+flex box container for the recommendations section 
+- remove default list formating styles
+- set width 100% of parent element
+- remove padding
+*/
+.recommendations{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+
+/* 
+styles for the recommendation items
+- add border, 1 pixel thick, solid, green
+- margin of 5px to add space between the items
+- alow items in the flex container to wrap
+*/
 .recommendation-item{
     border: 1px solid #A0C33F;
     margin: 5px;
     flex-wrap: wrap;
 }
 
+/*
+style product image in the recommendation section 
+- set width of the images
+- set padding to add space around the images
+*/
 .product-image{
-    width: 19em;
-    padding: 2px;
+    width: 14em;
+    padding: 5px;
 }
 
+/* 
+heading of recommended items
+- set color
+- add space before the heading
+- set font family
+*/
 .recommendation-item h3{
     color: #7A7C7D;
     margin-left: 20px;
     font-family: Georgia, serif;
-
 }
-
-.recommendation-header{
-    color: #A0C33F;
-    margin-left: 2.5rem;
-    font-family: Georgia, serif;
-
-}
+/* recommendations section */
