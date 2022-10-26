@@ -163,15 +163,23 @@ checkout heading
 .checkout-header{
     color: #A0C33F;
     font-family: Georgia, serif;
+    font-size: xx-large;
 }
 
 /* 
-checkout section heagin 2
+checkout section heading 2
 - set font and color
+- position the header on the outline
 */
 .checkout-h2{
     color: #A0C33F;
     font-family: Georgia, serif;
+    position: relative;
+    bottom: 35px;
+    width: fit-content;
+    background-color: white;
+    margin-left: 10px;
+    font-size: normal;
 }
 
 /* 
