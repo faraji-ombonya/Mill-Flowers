@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- nav element: markup the navigation section -->
+    <!-- nav element: markup the top menu -->
     <nav>
         <!-- ul element: markup an unordered list of links -->
         <ul class="container main-nav">
@@ -21,26 +21,26 @@
             <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
         </ul>
 
-        <!-- div container: hold the logo and footer in the navigation section -->
+        <!-- div container: hold the logo and contact inf in the navigation section -->
         <div class="container logo-footer">
             <div class="nav-logo">
                 <img src="images\logo3.png" alt="logo">
             </div>
-            <!-- footer: markup communication links -->
-            <footer class="">
+            <!-- div: container for communication links -->
+            <div>
                 <!-- list of communication links -->
                 <ul class="container nav-footer">
                     <li class=""><a href="tel: +353(0) 614486165">+353(0) 614486165</a></li>
                     <li class=""><a href="mailto: info@millflowers.ie">info@millflowers.ie</a></li>
                 </ul>
-            </footer>
+            </div>
         </div>
     </nav>
 
     <!-- Header -->
     <p class="nav-heading">ARTISAN FLOWER ARRANGEMENTS YOU WILL LOVE</p>
 
-    <!-- nav: markup secondary navigation section -->
+    <!-- nav: markup navigation section -->
     <nav>
         <ul class="container sec-nav">
             <li><a href="#" class="sec-nav-item">HOME</a></li>
@@ -56,10 +56,9 @@
         <!-- h1 element: markup main header of the page -->
         <h1 class="checkout-header">Checkout</h1>
         <!-- form element: markup checkout form  -->
-        <form action="checkout.php" method="post">
-            <!-- div with border class: put a border around the firs part of the form -->
-            <div class="border">
-                <h2 class="checkout-h2">Delivery Information</h2>
+        <form class="checkout-form" action="checkout.html" method="post">
+            <fieldset>
+                <legend>Delivery Information</legend>
                 <ul class="checkout-container">
                     <li class="checkout">
                         <label class="checkout-label" for="deliveryDate">Delivery date</label>
@@ -104,14 +103,13 @@
                             required></textarea>
                     </li>
                 </ul>
-            </div>
+            </fieldset>
 
-            <!-- payment information section -->
-            <div class="border">
-                <h2 class="checkout-h2">Payment Information</h2>
-                <h3 class="checkout-h3">Credit Card</h3>
+            <fieldset>
+                <legend class="">Payment Information</legend>
                 <!-- a list containing labels and input fields -->
                 <ul class="checkout-container">
+                    <h3 class="checkout-h3">Credit Card</h3>
                     <li class="checkout">
                         <label class="checkout-label" for="nameOnCard">Name on card</label>
                         <input class="checkout-input" type="text" name="nameOnCard" id="nameOnCard" required>
@@ -149,16 +147,18 @@
                         <input class="checkout-input" type="tel" name="phone" id="phone" required>
                     </li>
                 </ul>
-            </div>
+            </fieldset>
+
             <div class="button-container">
                 <!-- submit button: submits the form -->
                 <button class="button" type="submit" name="submit">Place Order</button>
             </div>
         </form>
+
     </section>
-    <!-- footer: markup footer -->
+    <!-- footer: markup footer with twitter link -->
     <footer class="footer-container">
-        <p class="">@millflowers</p>
+        <p>@millflowers</p>
     </footer>
 </body>
 
