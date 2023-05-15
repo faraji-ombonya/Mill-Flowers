@@ -100,7 +100,22 @@ style for the communication links
 
 .nav-footer li a{
     margin-left: 10px;
+    text-decoration: none;
+    color: #7A7C7D;
 }
+
+.nav-footer li a:hover{
+    color: #A0C33F;
+
+}
+
+.nav-footer li a:active{
+    color: #7A7C7D;
+}
+
+
+
+
 /* Navigation */
 
 
@@ -116,9 +131,9 @@ style for the communication links
 /* header 2 */
 
 
-/* -------- secondary navigation ------------ */
+/* -------- navigation ------------ */
 /* 
-container for the secondary navigation
+container for the  navigation
 - remove default list formating
 */
 .sec-nav{
@@ -129,7 +144,7 @@ container for the secondary navigation
 }
 
 /* 
-style for the secondary navigation items
+style for the navigation items
 - remove default link styles
 - add spaces
 - set color
@@ -143,7 +158,7 @@ style for the secondary navigation items
 }
 
 /* 
-secondary navigation item on hover state 
+ navigation item on hover state 
 - change color on hover
 */
 .sec-nav-item:hover{
@@ -151,13 +166,13 @@ secondary navigation item on hover state
 }
 
 /* 
-secondary navigation item on active state
+ navigation item on active state
 - change color on active
 */
 .sec-nav-item:active{
     color: #7A7C7D;
 }
-/* secondary navigation */
+/*  navigation */
 
 /* ---------- checkout section ------------ */
 /* 
